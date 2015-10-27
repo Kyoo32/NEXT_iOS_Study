@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>78B97C1A-226E-47B0-841E-92A2A2B81120</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>726CDF8C29FA7A6CB9D856652818F1E43EA83B2B</key>
+		<string>https://github.com/Kyoo32/NEXT_iOS_Study.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>exercise/Treehouse_FunFacts/Treehouse_FunFacts.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>726CDF8C29FA7A6CB9D856652818F1E43EA83B2B</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Kyoo32/NEXT_iOS_Study.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>726CDF8C29FA7A6CB9D856652818F1E43EA83B2B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>726CDF8C29FA7A6CB9D856652818F1E43EA83B2B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NEXT_iOS_Study</string>
+		</dict>
+	</array>
+</dict>
+</plist>
