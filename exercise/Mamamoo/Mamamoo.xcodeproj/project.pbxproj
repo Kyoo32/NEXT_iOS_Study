@@ -14,6 +14,10 @@
 		CE1C38521BD7413300E1FE24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1C38511BD7413300E1FE24 /* Images.xcassets */; };
 		CE1C38551BD7413300E1FE24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1C38531BD7413300E1FE24 /* LaunchScreen.xib */; };
 		CE1C38611BD7413300E1FE24 /* MamamooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1C38601BD7413300E1FE24 /* MamamooTests.m */; };
+		CE5868DA1BE0748200D6AEBC /* dumpTimeline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5868D91BE0748100D6AEBC /* dumpTimeline.jpg */; };
+		CE5868DC1BE0771000D6AEBC /* dumpShare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5868DB1BE0771000D6AEBC /* dumpShare.jpg */; };
+		CE5868DE1BE0801100D6AEBC /* 제.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE5868DD1BE0801100D6AEBC /* 제.jpeg */; };
+		CE5868E01BE0953C00D6AEBC /* 이.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE5868DF1BE0953C00D6AEBC /* 이.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		CE1C385A1BD7413300E1FE24 /* MamamooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MamamooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1C385F1BD7413300E1FE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1C38601BD7413300E1FE24 /* MamamooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MamamooTests.m; sourceTree = "<group>"; };
+		CE5868D91BE0748100D6AEBC /* dumpTimeline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dumpTimeline.jpg; sourceTree = "<group>"; };
+		CE5868DB1BE0771000D6AEBC /* dumpShare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dumpShare.jpg; sourceTree = "<group>"; };
+		CE5868DD1BE0801100D6AEBC /* 제.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "제.jpeg"; sourceTree = "<group>"; };
+		CE5868DF1BE0953C00D6AEBC /* 이.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "이.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 		CE1C38431BD7413300E1FE24 /* Mamamoo */ = {
 			isa = PBXGroup;
 			children = (
+				CE5868DF1BE0953C00D6AEBC /* 이.jpg */,
+				CE5868DD1BE0801100D6AEBC /* 제.jpeg */,
+				CE5868DB1BE0771000D6AEBC /* dumpShare.jpg */,
+				CE5868D91BE0748100D6AEBC /* dumpTimeline.jpg */,
 				CE1C38481BD7413300E1FE24 /* AppDelegate.h */,
 				CE1C38491BD7413300E1FE24 /* AppDelegate.m */,
 				CE1C384B1BD7413300E1FE24 /* ViewController.h */,
@@ -199,7 +211,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5868DC1BE0771000D6AEBC /* dumpShare.jpg in Resources */,
+				CE5868DA1BE0748200D6AEBC /* dumpTimeline.jpg in Resources */,
 				CE1C38501BD7413300E1FE24 /* Main.storyboard in Resources */,
+				CE5868E01BE0953C00D6AEBC /* 이.jpg in Resources */,
+				CE5868DE1BE0801100D6AEBC /* 제.jpeg in Resources */,
 				CE1C38551BD7413300E1FE24 /* LaunchScreen.xib in Resources */,
 				CE1C38521BD7413300E1FE24 /* Images.xcassets in Resources */,
 			);
@@ -416,6 +432,7 @@
 				CE1C38661BD7413300E1FE24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE1C38671BD7413300E1FE24 /* Build configuration list for PBXNativeTarget "MamamooTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +441,7 @@
 				CE1C38691BD7413300E1FE24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

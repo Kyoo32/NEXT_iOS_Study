@@ -14,6 +14,7 @@
 		CE205F911BD901F600C2495D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE205F901BD901F600C2495D /* Images.xcassets */; };
 		CE205F941BD901F600C2495D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE205F921BD901F600C2495D /* LaunchScreen.xib */; };
 		CE205FA01BD901F600C2495D /* Treehouse_FunFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE205F9F1BD901F600C2495D /* Treehouse_FunFactsTests.m */; };
+		CEA2010E1BE0FA5A00BBB80C /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA2010D1BE0FA5A00BBB80C /* ColorWheel.m */; };
 		CEEA00EE1BDFCFBA002F20AB /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA00ED1BDFCFBA002F20AB /* FactBook.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		CE205F991BD901F600C2495D /* Treehouse_FunFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Treehouse_FunFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE205F9E1BD901F600C2495D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE205F9F1BD901F600C2495D /* Treehouse_FunFactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Treehouse_FunFactsTests.m; sourceTree = "<group>"; };
+		CEA2010C1BE0FA5A00BBB80C /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
+		CEA2010D1BE0FA5A00BBB80C /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorWheel.m; sourceTree = "<group>"; };
 		CEEA00EC1BDFCFBA002F20AB /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
 		CEEA00ED1BDFCFBA002F20AB /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +87,8 @@
 		CE205F821BD901F600C2495D /* Treehouse_FunFacts */ = {
 			isa = PBXGroup;
 			children = (
+				CEA2010C1BE0FA5A00BBB80C /* ColorWheel.h */,
+				CEA2010D1BE0FA5A00BBB80C /* ColorWheel.m */,
 				CE205F871BD901F600C2495D /* AppDelegate.h */,
 				CE205F881BD901F600C2495D /* AppDelegate.m */,
 				CE205F8A1BD901F600C2495D /* ViewController.h */,
@@ -168,7 +173,7 @@
 		CE205F781BD901F600C2495D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Kate KyuWon";
 				TargetAttributes = {
 					CE205F7F1BD901F600C2495D = {
@@ -228,6 +233,7 @@
 				CE205F891BD901F600C2495D /* AppDelegate.m in Sources */,
 				CEEA00EE1BDFCFBA002F20AB /* FactBook.m in Sources */,
 				CE205F861BD901F600C2495D /* main.m in Sources */,
+				CEA2010E1BE0FA5A00BBB80C /* ColorWheel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +296,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -355,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Treehouse_FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "next2-4.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -365,6 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Treehouse_FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "next2-4.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -383,6 +392,7 @@
 				);
 				INFOPLIST_FILE = Treehouse_FunFactsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "next2-4.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Treehouse_FunFacts.app/Treehouse_FunFacts";
 			};
@@ -398,6 +408,7 @@
 				);
 				INFOPLIST_FILE = Treehouse_FunFactsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "next2-4.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Treehouse_FunFacts.app/Treehouse_FunFacts";
 			};
