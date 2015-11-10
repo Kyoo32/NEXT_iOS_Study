@@ -7,21 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE36C3F11BF20F680077E5B2 /* PlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE36C3F01BF20F680077E5B2 /* PlaylistDetailViewController.m */; };
 		CEDB40B41BEA67EB004C9148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDB40B31BEA67EB004C9148 /* main.m */; };
 		CEDB40B71BEA67EB004C9148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDB40B61BEA67EB004C9148 /* AppDelegate.m */; };
-		CEDB40BA1BEA67EB004C9148 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDB40B91BEA67EB004C9148 /* ViewController.m */; };
+		CEDB40BA1BEA67EB004C9148 /* PlaylistMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDB40B91BEA67EB004C9148 /* PlaylistMasterViewController.m */; };
 		CEDB40BD1BEA67EB004C9148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDB40BB1BEA67EB004C9148 /* Main.storyboard */; };
 		CEDB40BF1BEA67EB004C9148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDB40BE1BEA67EB004C9148 /* Assets.xcassets */; };
 		CEDB40C21BEA67EB004C9148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDB40C01BEA67EB004C9148 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE36C3EF1BF20F680077E5B2 /* PlaylistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistDetailViewController.h; sourceTree = "<group>"; };
+		CE36C3F01BF20F680077E5B2 /* PlaylistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistDetailViewController.m; sourceTree = "<group>"; };
 		CEDB40AF1BEA67EB004C9148 /* algorhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDB40B31BEA67EB004C9148 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEDB40B51BEA67EB004C9148 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEDB40B61BEA67EB004C9148 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEDB40B81BEA67EB004C9148 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEDB40B91BEA67EB004C9148 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEDB40B81BEA67EB004C9148 /* PlaylistMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaylistMasterViewController.h; sourceTree = "<group>"; };
+		CEDB40B91BEA67EB004C9148 /* PlaylistMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaylistMasterViewController.m; sourceTree = "<group>"; };
 		CEDB40BC1BEA67EB004C9148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEDB40BE1BEA67EB004C9148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDB40C11BEA67EB004C9148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,8 +63,10 @@
 			children = (
 				CEDB40B51BEA67EB004C9148 /* AppDelegate.h */,
 				CEDB40B61BEA67EB004C9148 /* AppDelegate.m */,
-				CEDB40B81BEA67EB004C9148 /* ViewController.h */,
-				CEDB40B91BEA67EB004C9148 /* ViewController.m */,
+				CEDB40B81BEA67EB004C9148 /* PlaylistMasterViewController.h */,
+				CEDB40B91BEA67EB004C9148 /* PlaylistMasterViewController.m */,
+				CE36C3EF1BF20F680077E5B2 /* PlaylistDetailViewController.h */,
+				CE36C3F01BF20F680077E5B2 /* PlaylistDetailViewController.m */,
 				CEDB40BB1BEA67EB004C9148 /* Main.storyboard */,
 				CEDB40BE1BEA67EB004C9148 /* Assets.xcassets */,
 				CEDB40C01BEA67EB004C9148 /* LaunchScreen.storyboard */,
@@ -149,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDB40BA1BEA67EB004C9148 /* ViewController.m in Sources */,
+				CEDB40BA1BEA67EB004C9148 /* PlaylistMasterViewController.m in Sources */,
+				CE36C3F11BF20F680077E5B2 /* PlaylistDetailViewController.m in Sources */,
 				CEDB40B71BEA67EB004C9148 /* AppDelegate.m in Sources */,
 				CEDB40B41BEA67EB004C9148 /* main.m in Sources */,
 			);
@@ -298,6 +304,7 @@
 				CEDB40C81BEA67EC004C9148 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

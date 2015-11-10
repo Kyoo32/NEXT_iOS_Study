@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YYa-d1-hwD">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Playlist-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PlaylistMasterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,7 +22,7 @@
                                 <animations/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="buttonTouched" destination="BYZ-38-t0r" eventType="touchUpInside" id="oET-Ie-DC2"/>
+                                    <segue destination="BBp-b9-Jiu" kind="push" identifier="showPlaylistDetail" id="dTX-5R-QUn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,13 +33,62 @@
                             <constraint firstItem="TlS-jF-8at" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="stc-Rk-RYe"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="aButton" destination="TlS-jF-8at" id="bM7-Un-A2c"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Playlist" id="Qi8-pa-WSt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180.26666666666665" y="295.83333333333331"/>
+            <point key="canvasLocation" x="667" y="323"/>
+        </scene>
+        <!--Artist-->
+        <scene sceneID="r3L-Sv-VG7">
+            <objects>
+                <viewController id="BBp-b9-Jiu" customClass="PlaylistDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RMd-ME-c5Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="CEs-Qp-XD1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VVv-TQ-c7a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You haven't pressed the button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48Y-lR-4aa">
+                                <rect key="frame" x="46" y="157" width="238" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.84972726570000001" green="1" blue="0.41325973420000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artist" id="5rW-w2-v1a"/>
+                    <connections>
+                        <outlet property="buttonPressedLabel" destination="48Y-lR-4aa" id="CRh-ff-lkE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJp-Ug-HcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1099" y="323"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XoW-CT-XMh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YYa-d1-hwD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2yp-Al-5JK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CT3-qD-93v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3X1-Mi-bpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="295"/>
         </scene>
     </scenes>
 </document>
