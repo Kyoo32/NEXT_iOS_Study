@@ -13,14 +13,14 @@
 {
 //ivar : instance variable, usually prefix_
     //default - @private
-    float _x;
+    float _x; //@property float x;
     float _y;
 }
 //methods
 - (id)initWithX:(float)x andY:(float)y;
-- (void)setX:(float)x;
+- (void)setX:(float)x; //@property float x;
 - (void)setY:(float)y;
-- (float)x;
+- (float)x; //@property float x;
 - (float)y;
 
 - (void)displayPoint;
@@ -30,7 +30,8 @@
 - (id)initWithX:(float)x andY:(float)y{
     self = [super init];
     if (self) {
-        _x = x;
+        _x = x; //@property float x; -> recommand "self.x = x;"
+                //[self setX: x];
         _y = y;
     }
     return self;
@@ -38,8 +39,8 @@
 
 - (void)setX:(float)x{
     _x = x;
-   // self.x =x;
-}
+   // self.x =x; = [self setX: x];
+} //@synthesize haha = x;
 - (void)setY:(float)y{
     _y = y;
 }

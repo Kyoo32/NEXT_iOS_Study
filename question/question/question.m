@@ -8,8 +8,14 @@
 
 #import "question.h"
 
-@implementation question
+@interface question()
+{
+    
+}
+@property int *hi;
+@end
 
+@implementation question
 
 
 BOOL *hi = NO;
