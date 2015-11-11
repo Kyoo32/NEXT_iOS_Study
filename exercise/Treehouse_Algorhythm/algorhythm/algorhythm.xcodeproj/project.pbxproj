@@ -14,6 +14,9 @@
 		CEDB40BD1BEA67EB004C9148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDB40BB1BEA67EB004C9148 /* Main.storyboard */; };
 		CEDB40BF1BEA67EB004C9148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDB40BE1BEA67EB004C9148 /* Assets.xcassets */; };
 		CEDB40C21BEA67EB004C9148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDB40C01BEA67EB004C9148 /* LaunchScreen.storyboard */; };
+		CEF0600E1BF3391D0037E24A /* ball_large.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CEF05FFF1BF3391D0037E24A /* ball_large.pdf */; };
+		CEF0601F1BF33BC40037E24A /* MusicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF0601E1BF33BC40037E24A /* MusicLibrary.m */; };
+		CEF060221BF341D00037E24A /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF060211BF341D00037E24A /* Playlist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		CEDB40BE1BEA67EB004C9148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDB40C11BEA67EB004C9148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEDB40C31BEA67EB004C9148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF05FFF1BF3391D0037E24A /* ball_large.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ball_large.pdf; sourceTree = "<group>"; };
+		CEF0601D1BF33BC40037E24A /* MusicLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLibrary.h; sourceTree = "<group>"; };
+		CEF0601E1BF33BC40037E24A /* MusicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLibrary.m; sourceTree = "<group>"; };
+		CEF060201BF341D00037E24A /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		CEF060211BF341D00037E24A /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +75,12 @@
 				CEDB40B91BEA67EB004C9148 /* PlaylistMasterViewController.m */,
 				CE36C3EF1BF20F680077E5B2 /* PlaylistDetailViewController.h */,
 				CE36C3F01BF20F680077E5B2 /* PlaylistDetailViewController.m */,
+				CEF0601D1BF33BC40037E24A /* MusicLibrary.h */,
+				CEF0601E1BF33BC40037E24A /* MusicLibrary.m */,
+				CEF060201BF341D00037E24A /* Playlist.h */,
+				CEF060211BF341D00037E24A /* Playlist.m */,
 				CEDB40BB1BEA67EB004C9148 /* Main.storyboard */,
+				CEF05FFF1BF3391D0037E24A /* ball_large.pdf */,
 				CEDB40BE1BEA67EB004C9148 /* Assets.xcassets */,
 				CEDB40C01BEA67EB004C9148 /* LaunchScreen.storyboard */,
 				CEDB40C31BEA67EB004C9148 /* Info.plist */,
@@ -144,6 +157,7 @@
 				CEDB40C21BEA67EB004C9148 /* LaunchScreen.storyboard in Resources */,
 				CEDB40BF1BEA67EB004C9148 /* Assets.xcassets in Resources */,
 				CEDB40BD1BEA67EB004C9148 /* Main.storyboard in Resources */,
+				CEF0600E1BF3391D0037E24A /* ball_large.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,9 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDB40BA1BEA67EB004C9148 /* PlaylistMasterViewController.m in Sources */,
+				CEF060221BF341D00037E24A /* Playlist.m in Sources */,
 				CE36C3F11BF20F680077E5B2 /* PlaylistDetailViewController.m in Sources */,
 				CEDB40B71BEA67EB004C9148 /* AppDelegate.m in Sources */,
 				CEDB40B41BEA67EB004C9148 /* main.m in Sources */,
+				CEF0601F1BF33BC40037E24A /* MusicLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
