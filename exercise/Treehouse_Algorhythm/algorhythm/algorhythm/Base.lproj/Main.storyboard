@@ -66,8 +66,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You haven't pressed the button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48Y-lR-4aa">
-                                <rect key="frame" x="46" y="157" width="238" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48Y-lR-4aa">
+                                <rect key="frame" x="41" y="274" width="238" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,6 +76,10 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.84972726570000001" green="1" blue="0.41325973420000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="48Y-lR-4aa" firstAttribute="centerY" secondItem="VVv-TQ-c7a" secondAttribute="centerY" id="2tv-1c-O5D"/>
+                            <constraint firstItem="48Y-lR-4aa" firstAttribute="centerX" secondItem="VVv-TQ-c7a" secondAttribute="centerX" id="9tX-vZ-QPi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artist" id="5rW-w2-v1a"/>
                     <connections>
