@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.aButton setTitle:@"Press me!" forState:UIControlStateNormal];
+    //[self.aButton setTitle:@"Press me!" forState:UIControlStateNormal];
     
     Playlist *playlist = [[Playlist alloc] initWithIndex:0];
     self.playListImageView0.image = playlist.playlistIcon;
@@ -36,6 +36,13 @@
         //playlistDetailController.segueLabelText = @"Yay! You pressed the button!";
         playlistDetailController.playlist = [[Playlist alloc] initWithIndex:0];
     }
+}
+
+
+
+- (IBAction)showPlaylistDetail:(id)sender {
+    NSLog(@"Hey, stop touching me!");
+    [self performSegueWithIdentifier:@"showPlaylistDetail" sender:sender];
 }
 
 @end
