@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface PlaylistMasterViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *playListImageView0;
+
+
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *playlistImageViews;
+
+//@property (weak, nonatomic) IBOutlet UIImageView *playListImageView0;
 //@property (weak, nonatomic) IBOutlet UIButton *aButton;
 
 @end

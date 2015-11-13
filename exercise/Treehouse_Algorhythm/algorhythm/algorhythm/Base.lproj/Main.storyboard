@@ -19,30 +19,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="fUD-vY-ken">
-                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="DhK-M4-pW1">
+                                <rect key="frame" x="2" y="401" width="157" height="165"/>
                                 <animations/>
-                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="1py-nd-cQQ"/>
-                                    <constraint firstAttribute="width" constant="200" id="zL4-Uq-Rpn"/>
-                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Y4T-Qe-Z3C" appends="YES" id="fXT-UJ-MBc"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xew-gf-dZO">
+                                <rect key="frame" x="161" y="401" width="157" height="165"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3TL-cd-lXW" appends="YES" id="41V-kN-eca"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="fUD-vY-ken">
+                                <rect key="frame" x="2" y="66" width="157" height="165"/>
+                                <animations/>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="FZl-80-E8q" appends="YES" id="F6u-6w-5tm"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Pjk-9Z-Mxt">
+                                <rect key="frame" x="161" y="66" width="157" height="165"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8To-H4-TeK" appends="YES" id="Vzh-b7-Fc0"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="HzO-UY-wEW">
+                                <rect key="frame" x="2" y="233" width="157" height="166"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FdJ-MU-eT5" appends="YES" id="U44-Ff-FdX"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="til-tP-GYd">
+                                <rect key="frame" x="161" y="233" width="157" height="166"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="i8f-gS-0IL" appends="YES" id="UJT-TC-74N"/>
                                 </connections>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.18431372549019609" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="fUD-vY-ken" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DfM-1G-zPC"/>
-                            <constraint firstItem="fUD-vY-ken" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N5H-Nn-Ix1"/>
+                            <constraint firstItem="DhK-M4-pW1" firstAttribute="height" secondItem="fUD-vY-ken" secondAttribute="height" id="6cs-GP-eB4"/>
+                            <constraint firstItem="Pjk-9Z-Mxt" firstAttribute="leading" secondItem="fUD-vY-ken" secondAttribute="trailing" constant="2" id="8BL-WH-Vdu"/>
+                            <constraint firstItem="fUD-vY-ken" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="8aw-U3-UIB"/>
+                            <constraint firstItem="xew-gf-dZO" firstAttribute="height" secondItem="fUD-vY-ken" secondAttribute="height" id="9jj-B5-qXA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xew-gf-dZO" secondAttribute="bottom" constant="2" id="BoM-4d-3N7"/>
+                            <constraint firstItem="xew-gf-dZO" firstAttribute="leading" secondItem="DhK-M4-pW1" secondAttribute="trailing" constant="2" id="FHN-NR-PJy"/>
+                            <constraint firstAttribute="trailing" secondItem="xew-gf-dZO" secondAttribute="trailing" constant="2" id="HeP-aP-2sZ"/>
+                            <constraint firstItem="DhK-M4-pW1" firstAttribute="top" secondItem="HzO-UY-wEW" secondAttribute="bottom" constant="2" id="MDo-en-Rig"/>
+                            <constraint firstItem="DhK-M4-pW1" firstAttribute="width" secondItem="fUD-vY-ken" secondAttribute="width" id="MlZ-xL-kX7"/>
+                            <constraint firstItem="til-tP-GYd" firstAttribute="height" secondItem="fUD-vY-ken" secondAttribute="height" id="N6G-Co-Qe1"/>
+                            <constraint firstItem="xew-gf-dZO" firstAttribute="top" secondItem="til-tP-GYd" secondAttribute="bottom" constant="2" id="PQQ-4Z-VYu"/>
+                            <constraint firstAttribute="trailing" secondItem="Pjk-9Z-Mxt" secondAttribute="trailing" constant="2" id="ROI-wd-jMM"/>
+                            <constraint firstItem="HzO-UY-wEW" firstAttribute="top" secondItem="fUD-vY-ken" secondAttribute="bottom" constant="2" id="SSa-nf-snS"/>
+                            <constraint firstItem="fUD-vY-ken" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="US3-8p-Zy3"/>
+                            <constraint firstItem="Pjk-9Z-Mxt" firstAttribute="height" secondItem="fUD-vY-ken" secondAttribute="height" id="UVl-I7-j6v"/>
+                            <constraint firstItem="HzO-UY-wEW" firstAttribute="width" secondItem="fUD-vY-ken" secondAttribute="width" id="Y6z-J8-QJu"/>
+                            <constraint firstItem="fUD-vY-ken" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="2" id="aK6-Da-bar"/>
+                            <constraint firstItem="xew-gf-dZO" firstAttribute="width" secondItem="fUD-vY-ken" secondAttribute="width" id="daz-Gf-UCL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DhK-M4-pW1" secondAttribute="bottom" constant="2" id="hAz-mL-kgj"/>
+                            <constraint firstItem="HzO-UY-wEW" firstAttribute="height" secondItem="fUD-vY-ken" secondAttribute="height" id="haR-Im-8Dr"/>
+                            <constraint firstItem="til-tP-GYd" firstAttribute="width" secondItem="fUD-vY-ken" secondAttribute="width" id="llf-f8-ASW"/>
+                            <constraint firstAttribute="trailing" secondItem="til-tP-GYd" secondAttribute="trailing" constant="2" id="oPm-1Z-Ra9"/>
+                            <constraint firstItem="HzO-UY-wEW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="oQx-ir-Xpm"/>
+                            <constraint firstItem="DhK-M4-pW1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="rnI-1z-584"/>
+                            <constraint firstItem="Pjk-9Z-Mxt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="2" id="sUn-MT-lFy"/>
+                            <constraint firstItem="fUD-vY-ken" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="2" id="x8h-Pu-bgj"/>
+                            <constraint firstItem="til-tP-GYd" firstAttribute="top" secondItem="Pjk-9Z-Mxt" secondAttribute="bottom" constant="2" id="xE0-2M-Q4x"/>
+                            <constraint firstItem="Pjk-9Z-Mxt" firstAttribute="width" secondItem="fUD-vY-ken" secondAttribute="width" id="xYU-0V-7So"/>
+                            <constraint firstItem="til-tP-GYd" firstAttribute="leading" secondItem="HzO-UY-wEW" secondAttribute="trailing" constant="2" id="yCD-1Z-CKP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlist" id="Qi8-pa-WSt"/>
                     <connections>
-                        <outlet property="playListImageView0" destination="fUD-vY-ken" id="Qzw-yk-buR"/>
+                        <outletCollection property="playlistImageViews" destination="fUD-vY-ken" id="Itu-NK-3pX"/>
+                        <outletCollection property="playlistImageViews" destination="Pjk-9Z-Mxt" id="0NK-30-zQi"/>
+                        <outletCollection property="playlistImageViews" destination="HzO-UY-wEW" id="9v7-tT-5fY"/>
+                        <outletCollection property="playlistImageViews" destination="til-tP-GYd" id="IgV-Db-7vd"/>
+                        <outletCollection property="playlistImageViews" destination="DhK-M4-pW1" id="R7G-lr-f9t"/>
+                        <outletCollection property="playlistImageViews" destination="xew-gf-dZO" id="T3T-b3-jVn"/>
                         <segue destination="BBp-b9-Jiu" kind="push" identifier="showPlaylistDetail" id="aHI-VX-Fjr"/>
                     </connections>
                 </viewController>
@@ -50,6 +117,31 @@
                 <tapGestureRecognizer id="FZl-80-E8q">
                     <connections>
                         <action selector="showPlaylistDetail:" destination="BYZ-38-t0r" id="vln-u1-4WF"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="FdJ-MU-eT5">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="BYZ-38-t0r" id="3Dy-1A-xBl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="i8f-gS-0IL">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="BYZ-38-t0r" id="1K0-DY-KmL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Y4T-Qe-Z3C">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="BYZ-38-t0r" id="jSX-GS-1NL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3TL-cd-lXW">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="BYZ-38-t0r" id="JPt-0Y-eWG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8To-H4-TeK">
+                    <connections>
+                        <action selector="showPlaylistDetail:" destination="BYZ-38-t0r" id="nT5-yL-raL"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

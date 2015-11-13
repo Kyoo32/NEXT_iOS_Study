@@ -20,8 +20,16 @@
     [super viewDidLoad];
     //[self.aButton setTitle:@"Press me!" forState:UIControlStateNormal];
     
-    Playlist *playlist = [[Playlist alloc] initWithIndex:0];
-    self.playListImageView0.image = playlist.playlistIcon;
+    //Playlist *playlist = [[Playlist alloc] initWithIndex:0];
+    for(NSUInteger index =0; index < self.playlistImageViews.count ; index++){
+        Playlist *playlist = [[Playlist alloc] initWithIndex:index];
+        
+        UIImageView *playlistImageView = self.playlistImageViews[index];
+        
+        playlistImageView.image =playlist.playlistIcon;
+        playlistImageView.backgroundColor = playlist.background;
+    }
+    //self.playListImageView0.image = playlist.playlistIcon;
 }
 
 
@@ -32,9 +40,17 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqual:@"showPlaylistDetail"]){
-        PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
-        //playlistDetailController.segueLabelText = @"Yay! You pressed the button!";
-        playlistDetailController.playlist = [[Playlist alloc] initWithIndex:0];
+        
+        UIImageView *playlistImageView = (UIImageView *)[sender view];
+        if([self.playlistImageViews containsObject:playlistImageView]){
+            NSUInteger index = [self.playlistImageViews indexOfObject:playlistImageView];
+            
+            PlaylistDetailViewController *playlistDetailController = (PlaylistDetailViewController *)segue.destinationViewController;
+            //playlistDetailController.segueLabelText = @"Yay! You pressed the button!";
+            
+            playlistDetailController.playlist = [[Playlist alloc] initWithIndex:index];
+        }
+        
     }
 }
 

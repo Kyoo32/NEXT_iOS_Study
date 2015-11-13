@@ -16,8 +16,56 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y67-Pk-J63">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.14117647058823529" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="306" id="LRL-Xu-QI2"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LRL-Xu-QI2"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2X4-mO-Pc1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.20392156862745098" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="294" id="NOg-DG-QX2"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NOg-DG-QX2"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Icon" translatesAutoresizingMaskIntoConstraints="NO" id="PDv-R6-UfX">
+                                <rect key="frame" x="240" y="240" width="120" height="120"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="8bt-9G-xpb"/>
+                                    <constraint firstAttribute="width" constant="120" id="Gti-hC-jYd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="y67-Pk-J63" secondAttribute="trailing" id="54r-tB-FrM"/>
+                            <constraint firstItem="y67-Pk-J63" firstAttribute="height" secondItem="2X4-mO-Pc1" secondAttribute="height" id="69R-1B-LDU"/>
+                            <constraint firstItem="y67-Pk-J63" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="AhQ-kS-01k"/>
+                            <constraint firstItem="2X4-mO-Pc1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="JtR-yH-4Xf"/>
+                            <constraint firstAttribute="trailing" secondItem="2X4-mO-Pc1" secondAttribute="trailing" id="M6Z-Fh-gLL"/>
+                            <constraint firstItem="PDv-R6-UfX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OcG-jp-hZU"/>
+                            <constraint firstItem="y67-Pk-J63" firstAttribute="top" secondItem="2X4-mO-Pc1" secondAttribute="bottom" id="Rjc-2X-lcp"/>
+                            <constraint firstItem="2X4-mO-Pc1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="VR2-Lu-qkT"/>
+                            <constraint firstItem="PDv-R6-UfX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="auv-Uk-1Rv"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="y67-Pk-J63" secondAttribute="bottom" id="vKX-jS-2Cg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,4 +73,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Launch Icon" width="120" height="120"/>
+    </resources>
 </document>
