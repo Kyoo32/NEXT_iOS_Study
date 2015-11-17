@@ -17,8 +17,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = [NSArray arrayWithObjects:@"Getting started with WordPress", @"Catalonia changes ahead secession plans",  @"Hasbro may disappoint Star Wars fans", nil];
     
+    NSURL *blogURL = [NSURL URLWithString: @"https://blog.teamtreehouse.com/api/get_recent_summary/"];
+    
+    NSData *jsonData = [NSData dataWithContentsOfURL:blogURL];
+    NSLog(@"%@", jsonData);
+    
+    NSError *error = nil;
+    
+    NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
+    NSLog(@"%@", dataDictionary);
+    
+    self.blogposts = [dataDictionary objectForKey:@"posts"];
+
+    
+    /*
+     //Before AJax.
+    NSDictionary *blogPost1 =  @{ @"title" : @"The Missing Widget in Android" , @"authour": @"Ben Jakuben" };
+    NSDictionary *blogPost2 =  @{ @"title" : @"Getting stared with iOS development" , @"authour": @"Amit Bijlani" };
+    
+    NSDictionary *blogPost3 =  @{ @"title" : @"An Interview with Shay howe" , @"authour": @"Joe Villanueva" };
+    
+
+    self.blogposts= [NSArray arrayWithObjects: blogPost1, blogPost2, blogPost3, nil];
+    */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,16 +57,18 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return [self.titles count];
+    return [self.blogposts count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath:indexPath];
+    NSDictionary *blogpost = [self.blogposts objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = [self.titles objectAtIndex:indexPath.row];
-    
+    cell.textLabel.text = [blogpost valueForKey:@"title"];
+    cell.detailTextLabel.text = [blogpost valueForKey:@"author"];
+
     return cell;
 }
 

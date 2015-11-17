@@ -290,6 +290,7 @@
 				CEAAC3A11BFB63FC00A12475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

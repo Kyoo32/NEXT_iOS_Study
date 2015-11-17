@@ -34,6 +34,7 @@
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSString *title = self.titlesArray[indexPath.row];
+        NSLog(@"%@ %s",title,[title description]);
         [[segue destinationViewController] setDetailItem: title];
         
     }
