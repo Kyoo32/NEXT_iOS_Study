@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE3355A51BE9950700B77DEC /* question.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3355A41BE9950700B77DEC /* question.m */; };
 		CE3355A81BE999C700B77DEC /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3355A71BE999C700B77DEC /* Main.m */; };
+		CEDB60811C0E8B970046DBD1 /* Datamodel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDB60801C0E8B970046DBD1 /* Datamodel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		CE3355A41BE9950700B77DEC /* question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = question.m; sourceTree = "<group>"; };
 		CE3355A61BE999C700B77DEC /* Main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main.h; sourceTree = "<group>"; };
 		CE3355A71BE999C700B77DEC /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
+		CEDB607F1C0E8B970046DBD1 /* Datamodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datamodel.h; sourceTree = "<group>"; };
+		CEDB60801C0E8B970046DBD1 /* Datamodel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Datamodel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				CE3355A41BE9950700B77DEC /* question.m */,
 				CE3355A61BE999C700B77DEC /* Main.h */,
 				CE3355A71BE999C700B77DEC /* Main.m */,
+				CEDB607F1C0E8B970046DBD1 /* Datamodel.h */,
+				CEDB60801C0E8B970046DBD1 /* Datamodel.m */,
 			);
 			path = question;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3355A81BE999C700B77DEC /* Main.m in Sources */,
+				CEDB60811C0E8B970046DBD1 /* Datamodel.m in Sources */,
 				CE3355A51BE9950700B77DEC /* question.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +251,7 @@
 				CE3355A11BE9947900B77DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

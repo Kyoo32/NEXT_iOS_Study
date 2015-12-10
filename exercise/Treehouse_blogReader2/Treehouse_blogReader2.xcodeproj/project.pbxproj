@@ -13,6 +13,7 @@
 		CEAAC39B1BFB63FC00A12475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAAC3991BFB63FC00A12475 /* LaunchScreen.storyboard */; };
 		CEAAC3A31BFB66BA00A12475 /* Main.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAAC3A21BFB66BA00A12475 /* Main.Storyboard */; };
 		CEAAC3A61BFB689F00A12475 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAC3A51BFB689F00A12475 /* TableViewController.m */; };
+		CEF7D23D1C04830200D18D93 /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7D23C1C04830200D18D93 /* BlogPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		CEAAC3A21BFB66BA00A12475 /* Main.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.Storyboard; sourceTree = "<group>"; };
 		CEAAC3A41BFB689F00A12475 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		CEAAC3A51BFB689F00A12475 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		CEF7D23B1C04830200D18D93 /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		CEF7D23C1C04830200D18D93 /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				CEAAC38F1BFB63FC00A12475 /* AppDelegate.m */,
 				CEAAC3A41BFB689F00A12475 /* TableViewController.h */,
 				CEAAC3A51BFB689F00A12475 /* TableViewController.m */,
+				CEF7D23B1C04830200D18D93 /* BlogPost.h */,
+				CEF7D23C1C04830200D18D93 /* BlogPost.m */,
 				CEAAC3971BFB63FC00A12475 /* Assets.xcassets */,
 				CEAAC3A21BFB66BA00A12475 /* Main.Storyboard */,
 				CEAAC3991BFB63FC00A12475 /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				CEAAC3901BFB63FC00A12475 /* AppDelegate.m in Sources */,
 				CEAAC3A61BFB689F00A12475 /* TableViewController.m in Sources */,
 				CEAAC38D1BFB63FC00A12475 /* main.m in Sources */,
+				CEF7D23D1C04830200D18D93 /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,11 +26,12 @@
         
         UIImageView *playlistImageView = self.playlistImageViews[index];
         
-        playlistImageView.image =playlist.playlistIcon;
+        playlistImageView.image = playlist.playlistIcon;
         playlistImageView.backgroundColor = playlist.background;
     }
     //self.playListImageView0.image = playlist.playlistIcon;
 }
+
 
 
 - (void)didReceiveMemoryWarning {
